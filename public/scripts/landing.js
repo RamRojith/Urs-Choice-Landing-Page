@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const header = document.getElementById('header');
   const navToggle = document.getElementById('nav-toggle');
   const navClose = document.getElementById('nav-close');
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   function handleBrochureRequest() {
-    alert('Thank you for your interest! Please contact us at +91 7448828872 or urschoicemadurai@gmail.com to receive our property brochure.');
+    alert('Thank you for your interest! Please contact us at +91 7448829972 or urschoicemadurai@gmail.com to receive our property brochure.');
   }
 
   async function handleFormSubmit(e) {
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     } catch (error) {
       console.error('Form submission error:', error);
-      showFormMessage('Something went wrong. Please call us at +91 7448828872.', 'error');
+      showFormMessage('Something went wrong. Please call us at +91 7448829972.', 'error');
     } finally {
       contactForm.querySelector('button[type="submit"]').disabled = false;
       contactForm.querySelector('button[type="submit"]').textContent = 'Request Callback';
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  window.addEventListener('scroll', function() {
+  window.addEventListener('scroll', function () {
     scrollHeader();
     showBackToTop();
   });
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   if (backToTop) {
-    backToTop.addEventListener('click', function() {
+    backToTop.addEventListener('click', function () {
       window.scrollTo({
         top: 0,
         behavior: 'smooth'
